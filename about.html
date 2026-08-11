@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科室简介 | 同济医院咸宁医院科教科</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="date" id="currentDate"></span>
+            <div class="quick-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系方式</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="logo">科</span>
+                <span>同济医院咸宁医院 · 科教科</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="notices.html">通知公告</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="teaching.html">教学管理</a></li>
+                <li><a href="research.html">科研管理</a></li>
+                <li><a href="regulations.html">规章制度</a></li>
+                <li><a href="about.html">科室简介</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>🏛️ 科室简介</h1>
+            <p>同济医院咸宁医院科教科</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <!-- 简介 -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h3><span class="panel-icon">📖</span> 科室概况</h3>
+                </div>
+                <div class="panel-body" id="deptDesc"></div>
+            </div>
+
+            <!-- 统计 -->
+            <div class="stats-bar" id="deptStats"></div>
+
+            <!-- 职能 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>📌 主要职能</h2>
+            </div>
+            <div class="panel">
+                <div class="panel-body">
+                    <ul id="deptFunctions"></ul>
+                </div>
+            </div>
+
+            <!-- 团队 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>👥 科室团队</h2>
+            </div>
+            <div class="grid-4" id="deptTeam"></div>
+
+            <!-- 联系方式 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>📞 联系我们</h2>
+            </div>
+            <div class="contact-card" id="deptContact"></div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop">&#8593;</button>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>同济医院咸宁医院 · 科教科</h4>
+                <p style="font-size:14px;opacity:.7;line-height:1.8">
+                    地址：湖北省咸宁市咸安区<br>
+                    电话：0715-XXXXXXXX　邮箱：kjk@tjyyxnyy.cn
+                </p>
+            </div>
+            <div>
+                <h4>快速导航</h4>
+                <a href="notices.html">通知公告</a>
+                <a href="news.html">新闻动态</a>
+                <a href="teaching.html">教学管理</a>
+                <a href="research.html">科研管理</a>
+            </div>
+            <div>
+                <h4>相关链接</h4>
+                <a href="regulations.html">规章制度</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 同济医院咸宁医院科教科　|　依托同济医院品牌与技术力量
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>
