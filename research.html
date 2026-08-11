@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研管理 | 同济医院咸宁医院科教科</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="date" id="currentDate"></span>
+            <div class="quick-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系方式</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="logo">科</span>
+                <span>同济医院咸宁医院 · 科教科</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="notices.html">通知公告</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="teaching.html">教学管理</a></li>
+                <li><a href="research.html">科研管理</a></li>
+                <li><a href="regulations.html">规章制度</a></li>
+                <li><a href="about.html">科室简介</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>🔬 科研管理</h1>
+            <p>课题申报 · 伦理审查 · 成果管理</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <!-- 科研板块 -->
+            <div id="researchPanels" class="grid-2"></div>
+
+            <!-- 科研流程 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>📋 院级课题申报流程</h2>
+            </div>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="info-row"><span class="info-label">第一步：选题</span><span class="info-value">围绕临床实际问题，鼓励多学科联合攻关</span></div>
+                    <div class="info-row"><span class="info-label">第二步：撰写申报书</span><span class="info-value">按模板填写，可参考科教科提供的申报指南</span></div>
+                    <div class="info-row"><span class="info-label">第三步：科室审核</span><span class="info-value">科室主任审核签字</span></div>
+                    <div class="info-row"><span class="info-label">第四步：提交材料</span><span class="info-value">纸质版提交科教科，电子版发送 kjk@tjyyxnyy.cn</span></div>
+                    <div class="info-row"><span class="info-label">第五步：专家评审</span><span class="info-value">科教科组织专家评审委员会进行评审</span></div>
+                    <div class="info-row"><span class="info-label">第六步：立项公示</span><span class="info-value">评审通过后公示5个工作日，无异议则正式立项</span></div>
+                </div>
+            </div>
+
+            <!-- 科研成果 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>🏆 科研成果</h2>
+            </div>
+            <div class="grid-3">
+                <div class="panel">
+                    <div class="panel-header"><h3><span class="panel-icon">📄</span> 论文</h3></div>
+                    <div class="panel-body">
+                        <div class="info-row"><span class="info-label">SCI论文</span><span class="info-value">持续积累中</span></div>
+                        <div class="info-row"><span class="info-label">核心期刊</span><span class="info-value">持续积累中</span></div>
+                        <div class="info-row"><span class="info-label">奖励标准</span><span class="info-value">按医院成果奖励办法执行</span></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h3><span class="panel-icon">💡</span> 专利</h3></div>
+                    <div class="panel-body">
+                        <div class="info-row"><span class="info-label">发明专利</span><span class="info-value">职务发明归医院所有</span></div>
+                        <div class="info-row"><span class="info-label">实用新型</span><span class="info-value">按知识产权管理办法执行</span></div>
+                        <div class="info-row"><span class="info-label">成果转化</span><span class="info-value">鼓励临床科研成果转化</span></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-header"><h3><span class="panel-icon">🏅</span> 获奖</h3></div>
+                    <div class="panel-body">
+                        <div class="info-row"><span class="info-label">省级课题</span><span class="info-value">省级继教项目已获批</span></div>
+                        <div class="info-row"><span class="info-label">院级课题</span><span class="info-value">2026年度申报中</span></div>
+                        <div class="info-row"><span class="info-label">学术交流</span><span class="info-value">鼓励参加学术会议</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop">&#8593;</button>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>同济医院咸宁医院 · 科教科</h4>
+                <p style="font-size:14px;opacity:.7;line-height:1.8">
+                    地址：湖北省咸宁市咸安区<br>
+                    电话：0715-XXXXXXXX　邮箱：kjk@tjyyxnyy.cn
+                </p>
+            </div>
+            <div>
+                <h4>快速导航</h4>
+                <a href="notices.html">通知公告</a>
+                <a href="news.html">新闻动态</a>
+                <a href="teaching.html">教学管理</a>
+                <a href="research.html">科研管理</a>
+            </div>
+            <div>
+                <h4>相关链接</h4>
+                <a href="regulations.html">规章制度</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 同济医院咸宁医院科教科　|　依托同济医院品牌与技术力量
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderResearchPanels('researchPanels', researchItems);
+        });
+    </script>
+</body>
+</html>
