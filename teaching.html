@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学管理 | 同济医院咸宁医院科教科</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="date" id="currentDate"></span>
+            <div class="quick-links">
+                <a href="index.html">首页</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系方式</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <span class="logo">科</span>
+                <span>同济医院咸宁医院 · 科教科</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="notices.html">通知公告</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="teaching.html">教学管理</a></li>
+                <li><a href="research.html">科研管理</a></li>
+                <li><a href="regulations.html">规章制度</a></li>
+                <li><a href="about.html">科室简介</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>🎓 教学管理</h1>
+            <p>临床实习 · 住院医师规范化培训 · 继续医学教育</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <!-- 教学板块 -->
+            <div id="teachingPanels" class="grid-2"></div>
+
+            <!-- 教学时间线 -->
+            <div class="section-header" style="margin-top:32px">
+                <h2>📅 教学日历</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年8月28日</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">实习生入科教育</div>
+                        <p>全体实习生在学术报告厅参加入科教育，14:00开始</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年9月1日</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">秋季学期实习开始</div>
+                        <p>实习生正式进入临床科室轮转</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年8月20日</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">第三期继续医学教育培训</div>
+                        <p>主题：心血管疾病诊疗新进展，同济专家授课</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年9月15日</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">院级科研课题申报截止</div>
+                        <p>各科室提交申报材料至科教科</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年10月</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">省级继教项目首期培训</div>
+                        <p>《心血管疾病诊疗新进展培训班》面向全省开放报名</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop">&#8593;</button>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>同济医院咸宁医院 · 科教科</h4>
+                <p style="font-size:14px;opacity:.7;line-height:1.8">
+                    地址：湖北省咸宁市咸安区<br>
+                    电话：0715-XXXXXXXX　邮箱：kjk@tjyyxnyy.cn
+                </p>
+            </div>
+            <div>
+                <h4>快速导航</h4>
+                <a href="notices.html">通知公告</a>
+                <a href="news.html">新闻动态</a>
+                <a href="teaching.html">教学管理</a>
+                <a href="research.html">科研管理</a>
+            </div>
+            <div>
+                <h4>相关链接</h4>
+                <a href="regulations.html">规章制度</a>
+                <a href="about.html">科室简介</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 同济医院咸宁医院科教科　|　依托同济医院品牌与技术力量
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTeachingPanels('teachingPanels', teachingItems);
+        });
+    </script>
+</body>
+</html>
